@@ -39,4 +39,10 @@ public class StudentMarksController {
         service.deleteMarks(id);
         return "Marks record deleted successfully";
     }
+    
+    // REMOVE DUPLICATES
+    @PostMapping("/remove-duplicates")
+    public java.util.Map<String, Object> removeDuplicates() {
+        return service.removeDuplicates();
+    }
 }

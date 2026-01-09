@@ -10,6 +10,7 @@ public class StudentMarks {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true, nullable = false)
     private String hallTicketNumber;
     private String setNumber;
     private String marks;
